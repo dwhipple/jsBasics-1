@@ -17,7 +17,7 @@
 			
 
 		var trigBlocks= function(){
-				colors = ['red', 'blue', 'yellow'];
+				colors = ['red', 'blue', 'yellow', 'green', 'purple', 'orange'];
 			
 				whichElem = 0;
 				this.clickMe= function(){
@@ -40,7 +40,7 @@
 							}
 							thisElem.clickMe();
 
-						},3000)
+						},4000)
 					}
 				}
 
@@ -83,6 +83,21 @@
 									aniTop= "30%";
 									tColor="purple";
 								break;
+								case 3:
+									aniLeft = "90%";
+									aniTop= "60%";
+									tColor="blue";
+								break;
+								case 4:
+									aniLeft = "50%";
+									aniTop= "-30%";
+									tColor="black";
+								break;
+								case 5:
+									aniLeft = "20%";
+									aniTop= "30%";
+									tColor="cyan";
+								break;
 							}
 
 							$(this).animate({"left": aniLeft, "top":aniTop});
@@ -97,7 +112,7 @@
 
 											$(this).css({'background-color':$(this).attr('original')})
 										})
-								}, 2000);
+								}, 4000);
 								$('.thingy').removeClass('active');
 								whichOne=0;
 							}
@@ -130,6 +145,9 @@
 
 	<body>
 
+		<div class="thingy"></div>
+		<div class="thingy"></div>
+		<div class="thingy"></div>
 		<div class="thingy"></div>
 		<div class="thingy"></div>
 		<div class="thingy"></div>
